@@ -2,12 +2,12 @@
 
 import React, { useState } from "react";
 import Lottie from "react-lottie";
-import styled from "styled-components";
 import bunnyCry from "./animations/bunnyCry.json";
 import bunnyPlease from "./animations/bunnyPlease.json";
 import bunnyYes from "./animations/bunnyYes.json";
 import bunnyPunch from "./animations/bunnyPunch.json";
 import Button from "./components/Button";
+import styled from "styled-components";
 
 const getRandomPosition = () => {
   if (typeof window !== 'undefined') {
