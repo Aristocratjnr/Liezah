@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["jest"],
     "target": "esnext",
     "lib": [
       "dom",
@@ -21,10 +22,7 @@
       "node_modules/@types",
       "./src/@types"
     ],
-    "types": [
-      "jest",
-      "styled-components-react-native"
-    ],
+
     "paths": {
       "@/*": [
         "./*"
@@ -45,4 +43,5 @@
   "exclude": [
     "node_modules"
   ]
+  
 }

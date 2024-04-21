@@ -8,6 +8,7 @@ import bunnyPlease from "./animations/bunnyPlease.json";
 import bunnyYes from "./animations/bunnyYes.json";
 import bunnyPunch from "./animations/bunnyPunch.json";
 import Button from "./components/Button";
+import BackgroundMusic from "./components/BackgroundMusic";
 
 const getRandomPosition = () => {
   if (typeof window !== 'undefined') {
@@ -76,8 +77,9 @@ function Home() {
 
   return (
     <StyledHome data-testid="container">
+       <BackgroundMusic/>
       <div className="home-container">
-        {bunnyState === "yes" ? <div className="title">Hasta la vista Baby  !!!!</div> : <div className="title"> Liezah, will you go out with me?</div>}
+        {bunnyState === "yes" ? <div className="title">Let's go, Baby😘💕</div> : <div className="title"> Liezah, will you go out with me🥲?</div>}
         <div className="animation">
           {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
           {bunnyState === "cry" && <Lottie options={bunnyCryOptions} height={300} width={300} />}
@@ -85,7 +87,7 @@ function Home() {
           {bunnyState === "punch" && <Lottie options={bunnyPunchOptions} height={300} width={300} />}
         </div>
         {bunnyState !== "yes" && <div className="buttons">
-          <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Yes</button>
+          <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Yes❤️</button>
           <Button
             $randomleft={randomPosition.randomLeft}
             $randomtop={randomPosition.randomTop}
@@ -94,7 +96,7 @@ function Home() {
             onMouseLeave={() => handleHover(false)}
 
           >
-            No
+            No😩
           </Button>
         </div>}
       </div>
