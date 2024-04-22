@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "types": ["jest"],
-=======
->>>>>>> main
     "target": "esnext",
     "lib": [
       "dom",
@@ -25,11 +22,7 @@
       "node_modules/@types",
       "./src/@types"
     ],
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> main
     "paths": {
       "@/*": [
         "./*"
@@ -50,8 +43,5 @@
   "exclude": [
     "node_modules"
   ]
-<<<<<<< HEAD
   
-=======
->>>>>>> main
 }
