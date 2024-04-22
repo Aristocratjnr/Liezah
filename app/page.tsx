@@ -2,13 +2,20 @@
 
 import React, { useState } from "react";
 import Lottie from "react-lottie";
+<<<<<<< HEAD
 import styled from "styled-components";
+=======
+>>>>>>> main
 import bunnyCry from "./animations/bunnyCry.json";
 import bunnyPlease from "./animations/bunnyPlease.json";
 import bunnyYes from "./animations/bunnyYes.json";
 import bunnyPunch from "./animations/bunnyPunch.json";
 import Button from "./components/Button";
+<<<<<<< HEAD
 import BackgroundMusic from "./components/BackgroundMusic";
+=======
+import styled from "styled-components";
+>>>>>>> main
 
 const getRandomPosition = () => {
   if (typeof window !== 'undefined') {
@@ -77,9 +84,14 @@ function Home() {
 
   return (
     <StyledHome data-testid="container">
+<<<<<<< HEAD
        <BackgroundMusic/>
       <div className="home-container">
         {bunnyState === "yes" ? <div className="title">Let's go, Baby😘💕</div> : <div className="title"> Liezah, will you go out with me🥲?</div>}
+=======
+      <div className="home-container">
+        {bunnyState === "yes" ? <div className="title">Hasta la vista Baby  !!!!</div> : <div className="title"> Liezah, will you go out with me?</div>}
+>>>>>>> main
         <div className="animation">
           {bunnyState === "normal" && <Lottie options={bunnyPleaseOptions} height={300} width={300} />}
           {bunnyState === "cry" && <Lottie options={bunnyCryOptions} height={300} width={300} />}
@@ -87,7 +99,11 @@ function Home() {
           {bunnyState === "punch" && <Lottie options={bunnyPunchOptions} height={300} width={300} />}
         </div>
         {bunnyState !== "yes" && <div className="buttons">
+<<<<<<< HEAD
           <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Yes❤️</button>
+=======
+          <button onClick={() => setBunnyState("yes")} onMouseEnter={() => setBunnyState("normal")}>Yes</button>
+>>>>>>> main
           <Button
             $randomleft={randomPosition.randomLeft}
             $randomtop={randomPosition.randomTop}
@@ -96,7 +112,11 @@ function Home() {
             onMouseLeave={() => handleHover(false)}
 
           >
+<<<<<<< HEAD
             No😩
+=======
+            No
+>>>>>>> main
           </Button>
         </div>}
       </div>
