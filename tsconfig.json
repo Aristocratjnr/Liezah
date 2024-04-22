@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["jest"],
     "target": "esnext",
     "lib": [
       "dom",
@@ -13,7 +12,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node", // Change from "bundler" to "node"
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -22,7 +21,6 @@
       "node_modules/@types",
       "./src/@types"
     ],
-
     "paths": {
       "@/*": [
         "./*"
@@ -38,10 +36,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "jest.config.js" // Include jest configuration file
   ],
   "exclude": [
     "node_modules"
   ]
-  
 }
